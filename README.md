@@ -51,7 +51,8 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
 
 ## Integration Examples
 
-You can find more examples [here](https://streamdevil.github.io/streamdevil-sdk-js/docs).
+ - [VideoJs plugin](https://streamdevil.github.io/streamdevil-sdk-js/examples/videojs-player.html) ([source](https://github.com/streamdevil/streamdevil-sdk-js/blob/master/examples/videojs-player.html))
+ - [Native HTML5 player](https://streamdevil.github.io/streamdevil-sdk-js/examples/html5-player.html) ([source](https://github.com/streamdevil/streamdevil-sdk-js/blob/master/examples/html5-player.html))
 
 ## StreamDevil Dashboard
 
