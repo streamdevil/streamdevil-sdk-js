@@ -8,33 +8,33 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.8/streamdevil-sdk.js"></script>
 </head>
 <body>
-<video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
+    <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
 
-<script type="application/javascript">
-    // StreamDevil SDK initialization
-    var streamDevil = new StreamDevilSDK({
-        apiKey: 'streamdevil-demo-key', // required
-        debug: true // for development purposes only
-    });
+    <script type="application/javascript">
+        // StreamDevil SDK initialization
+        var streamDevil = new StreamDevilSDK({
+            apiKey: 'streamdevil-demo-key', // required
+            debug: true // for development purposes only
+        });
 
 
-    var player = document.getElementById('player');
-    var videoURL = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
+        var player = document.getElementById('player');
+        var videoURL = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
 
-    // StreamDevil set video source
-    streamDevil.setSrc({
-        target: player,
-        src: videoURL
-    }, function (error) {
-        if (error) {
-            // fallback to plain source
-            player.src = videoURL;
-            console.log(error);
+        // StreamDevil set video source
+        streamDevil.setSrc({
+            target: player,
+            src: videoURL
+        }, function (error) {
+            if (error) {
+                // fallback to plain source
+                console.log(error);
+                player.src = videoURL;
+                player.play();
+                return;
+            }
             player.play();
-            return;
-        }
-        player.play();
-    });
-</script>
+        });
+    </script>
 </body>
 </html>

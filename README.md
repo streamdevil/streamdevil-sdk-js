@@ -9,46 +9,49 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
 ```html
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>StreamDevil Basic Integration</title>
+<head>
+    <meta charset="utf-8">
+    <title>StreamDevil Basic Integration</title>
 
-        <!-- StreamDevil SDK include -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.8/streamdevil-sdk.js"></script>
-    </head>
-    <body>
-        <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
-        
-        <script type="application/javascript">
-            var player = document.getElementById('player');
+    <!-- StreamDevil SDK include -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.8/streamdevil-sdk.js"></script>
+</head>
+<body>
+    <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
     
-            // StreamDevil SDK initialization
-            var streamDevil = new StreamDevilSDK({
-                debug: true // only for development
-            });
-        
-            // StreamDevil set video source
-            streamDevil.setSrc({
-                target: player,
-                src: '/static/demo/big-buck-bunny.mp4', 
-                srcUid: 'big-buck-bunny.mp4.sdm'
-            }, function (error) {
-                if (error) {
-                    // fallback to plain source 
-                    player.src = '/static/demo/big-buck-bunny.mp4';
-                    console.log(error);
-                    return;
-                }
+    <script type="application/javascript">
+        // StreamDevil SDK initialization
+        var streamDevil = new StreamDevilSDK({
+            apiKey: 'streamdevil-demo-key', // required
+            debug: true // for development purposes only
+        });
+    
+    
+        var player = document.getElementById('player');
+        var videoURL = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
+    
+        // StreamDevil set video source
+        streamDevil.setSrc({
+            target: player,
+            src: videoURL
+        }, function (error) {
+            if (error) {
+                // fallback to plain source
+                console.log(error);
+                player.src = videoURL;
                 player.play();
-            });
-        </script>
-    </body>
+                return;
+            }
+            player.play();
+        });
+    </script>
+</body>
 </html>
 ```
 
-## Integration Samples
+## Integration Examples
 
-You can find more documentation [here](https://streamdevil.github.io/streamdevil-sdk-js).
+You can find more examples [here](https://streamdevil.github.io/streamdevil-sdk-js/docs).
 
 ## StreamDevil Dashboard
 
