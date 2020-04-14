@@ -28,7 +28,7 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
     
     
         var player = document.getElementById('player');
-        var videoURL = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
+        var videoURL = 'https://streamdevil.github.io/examples/file_example_MP4_640_3MG.mp4';
     
         // StreamDevil set video source
         streamDevil.setSrc({
