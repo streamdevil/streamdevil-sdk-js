@@ -1,0 +1,27 @@
+{
+  "name": "streamdevil-sdk-js",
+  "version": "1.2.8",
+  "description": "StreamDevil SDK for JavaScript ",
+  "main": "streamdevil-sdk.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:streamdevil/streamdevil-sdk-js.git"
+  },
+  "keywords": [
+    "streamdevil",
+    "sdk",
+    "video",
+    "streaming",
+    "p2p",
+    "peer-2-peer"
+  ],
+  "author": "StreamDevil",
+  "license": "ISC",
+  "homepage": "https://streamdevil.github.io/streamdevil-sdk-js/"
+}
