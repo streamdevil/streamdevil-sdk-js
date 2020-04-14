@@ -27,7 +27,7 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
                 debug: true // only for development
             });
         
-            // StreamDevil wrap video source
+            // StreamDevil set video source
             streamDevil.setSrc({
                 target: player,
                 src: '/static/demo/big-buck-bunny.mp4', 
@@ -46,9 +46,9 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
 </html>
 ```
 
-## Integration Documentations
+## Integration Samples
 
-You can find documentation [here](https://streamdevil.github.com/streamdevil-sdk-js).
+You can find more documentation [here](https://streamdevil.github.com/streamdevil-sdk-js).
 
 ## StreamDevil Dashboard
 
