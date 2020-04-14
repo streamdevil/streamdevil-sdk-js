@@ -22,9 +22,7 @@
     <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
 
     <script>
-        var options = {
-        };
-        var player = videojs('player', options);
+        var player = videojs('player', {});
         player.src({
             src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
             type:'video/mp4'
