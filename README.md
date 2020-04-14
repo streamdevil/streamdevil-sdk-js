@@ -4,7 +4,7 @@ StreamDevil SDK for JavaScript
 StreamDevil provides an intelligent peer-assisted streaming infrastructure on top of your existing CDN. It radically reduces your CDN bandwidth and allows you to serve the highest video quality at lower cost. 
 You can find a demo [here](https://streamdevil.io/vod-demo/).
 
-## Basic Integration Sample
+## Basic Integration Example
 
 ```html
 <!doctype html>
