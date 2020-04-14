@@ -48,7 +48,7 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
 
 ## Integration Samples
 
-You can find more documentation [here](https://streamdevil.github.com/streamdevil-sdk-js).
+You can find more documentation [here](https://streamdevil.github.io/streamdevil-sdk-js).
 
 ## StreamDevil Dashboard
 
