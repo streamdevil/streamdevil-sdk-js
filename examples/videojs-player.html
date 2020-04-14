@@ -8,7 +8,7 @@
     <link href="http://vjs.zencdn.net/7.7.4/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/7.7.4/video.js"></script>
 
-    <!-- StreamDevil SDK include -->
+    <!-- StreamDevil SDK init and plugin registration -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.8/streamdevil-sdk.js"></script>
     <script type="application/javascript">
         var streamDevil = new StreamDevilSDK({
@@ -19,17 +19,17 @@
     </script>
 </head>
 <body>
-<video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
+    <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
 
-<script>
-    var options = {
-    };
-    var player = videojs('player', options);
-    player.src({
-        src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-        type:'video/mp4'
-    })
-    player.play();
-</script>
+    <script>
+        var options = {
+        };
+        var player = videojs('player', options);
+        player.src({
+            src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+            type:'video/mp4'
+        })
+        player.play();
+    </script>
 </body>
 </html>
