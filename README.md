@@ -14,7 +14,7 @@ You can find a demo [here](https://streamdevil.io/vod-demo/).
     <title>StreamDevil Basic Integration</title>
 
     <!-- StreamDevil SDK include -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.8/streamdevil-sdk.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/streamdevil/streamdevil-sdk-js@1.2.9/streamdevil-sdk.js"></script>
 </head>
 <body>
     <video id="player" width="600" height="300" class="video-js vjs-default-skin" controls muted></video>
